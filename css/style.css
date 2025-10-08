@@ -1,0 +1,81 @@
+/* Tag-based selectors */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8fafb;
+}
+h1, h2, h3 {
+    margin-top: 0;
+}
+ul, ol {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+a {
+    color: #1565c0;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Classes */
+.site-title {
+    color: #263238;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.navbar {
+    padding: 0.5em 0;
+    background: #e3eafc;
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+    border-bottom: 2px solid #90caf9;
+}
+.card {
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #dde1ea;
+    padding: 1.2em 1.5em;
+    width: 100%;
+    margin: 0.7em 0;
+}
+.info-card, .artist-card {
+    background: #f5f9ff;
+    border-color: #b3e5fc;
+}
+
+.bullet-card, .feature-card {
+    background: #fffbea;
+    border-color: #ffd54f;
+}
+
+.timeline-card {
+    background: #f1f8e9;
+    border: 1px solid #aed581;
+    border-radius: 10px;
+    padding: 1em 1.5em;
+    margin-top: 2em;
+    max-width: 600px;
+}
+
+/* Flexbox layout */
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+.flex-row .card {
+    flex: 1 1 45%;
+    min-width: 250px;
+}
+
+/* Unique IDs */
+#main-header {
+    background: #17497b;
+    color: #fff;
+    padding: 1.2em 0 0.5
