@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- JAZZ WEBSITE: Completed for class assignment - Yash Pawar -->
-    <!-- METADATA: Character set and viewport for responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jazz Legends - Home</title>
+    <!-- Bootstrap CDN: always load before your custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- HEADER: Site title and main navigation -->
-    <header id="main-header">
-        <h1 class="site-title">Jazz Legends: Exploring the Greats</h1>
-        <nav class="navbar">
-            <!-- INTERNAL LINKS: Semantic navigation between pages -->
-            <a href="index.html">Home</a>
-            <a href="page2.html">Artist Profiles</a>
-        </nav>
+    <header class="bg-primary text-white py-4 mb-4">
+        <div class="container">
+            <h1 class="site-title mb-2">Jazz Legends: Exploring the Greats</h1>
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container-fluid px-0">
+                    <a class="navbar-brand" href="index.html">Home</a>
+                    <a class="nav-link d-inline px-2" href="page2.html">Artist Profiles</a>
+                </div>
+            </nav>
+        </div>
     </header>
-    
-    <!-- MAIN: Primary content of the page -->
     <main>
-        <!-- FLEXBOX: Section with side-by-side feature -->
-        <section id="feature-section" class="flex-row">
-            <div class="card info-card">
-                <h2>The Soul of Jazz Music</h2>
-                <p>Jazz is more than just music - it's a cultural movement that revolutionized American art. Born from African American communities in New Orleans, jazz has given us some of the most influential musicians in history.</p>
-                <p>This website celebrates the legends who shaped this incredible genre and continues to inspire generations of musicians.</p>
+        <div class="container">
+            <div class="row g-4 align-items-stretch">
+                <section class="col-md-6">
+                    <div class="card h-100 shadow-sm p-3">
+                        <h2 class="card-title">The Soul of Jazz Music</h2>
+                        <p>
+                            Jazz is more than just music – it's a cultural movement that revolutionized American art.
+                            Born from African American communities in New Orleans, jazz has given us some of the most influential musicians in history.
+                        </p>
+                        <p>
+                            This website celebrates the legends who shaped this incredible genre and continues to inspire generations of musicians.
+                        </p>
+                    </div>
+                </section>
+                <section class="col-md-6">
+                    <div class="card h-100 shadow-sm p-3 bg-light">
+                        <h3 class="card-title">What Makes Jazz Unique</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Improvisation and spontaneous creativity</li>
+                            <li class="list-group-item">Syncopated rhythms and swing feel</li>
+                            <li class="list-group-item">Blue notes and complex harmonies</li>
+                            <li class="list-group-item">Call and response patterns</li>
+                            <li class="list-group-item">Cultural fusion and evolution</li>
+                        </ul>
+                    </div>
+                </section>
             </div>
-            <div class="card bullet-card">
-                <h3>What Makes Jazz Unique</h3>
-                <ul>
-                    <li>Improvisation and spontaneous creativity</li>
-                    <li>Syncopated rhythms and swing feel</li>
-                    <li>Blue notes and complex harmonies</li>
-                    <li>Call and response patterns</li>
-                    <li>Cultural fusion and evolution</li>
-                </ul>
-            </div>
-        </section>
+            <footer class="mt-5 text-center pt-4 border-top">
+                <a href="page2.html" class="btn btn-success btn-lg my-3">Explore Classic Jazz Artists</a>
+                <p class="small">&copy; 2024 Jazz Legends Website. All rights reserved.</p>
+            </footer>
+        </div>
     </main>
-    
-    <!-- FOOTER: Secondary navigation and page links -->
-    <footer id="main-footer">
-        <p><a href="page2.html">🎶 Explore Classic Jazz Artists →</a></p>
-        <p>&copy; 2024 Jazz Legends Website. All rights reserved.</p>
-    </footer>
 </body>
 </html>
