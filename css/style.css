@@ -79,3 +79,68 @@ a:hover {
     background: #17497b;
     color: #fff;
     padding: 1.2em 0 0.5
+
+body {
+  background-color: #f8fafb;
+  color: #181818;
+}
+
+#main-header {
+  background: #17497b;
+  color: #fff;
+  padding: 1.2em 0 0.5em 0;
+  text-align: center;
+}
+
+#main-footer {
+  background: #212121;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  border-top: 2px solid #90caf9;
+}
+
+.card, .info-card, .bullet-card, .artist-card, .feature-card, .timeline-card {
+  background: #fff;
+  color: #222;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #dde1ea;
+  padding: 1.2em 1.5em;
+  margin: 1em 0;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+.flex-row .card {
+  flex: 1 1 45%;
+  min-width: 250px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 900px) {
+  .flex-row {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .flex-row .card {
+    min-width: auto;
+    width: 100%;
+  }
+
+  body {
+    font-size: 1em;
+  }
+}
+
+/* For focus indicators (accessibility) */
+a:focus, button:focus {
+  outline: 3px solid #1976d2;
+  outline-offset: 2px;
+}
+
